@@ -28,6 +28,22 @@ El sistema evalúa el perfil financiero de un cliente a partir de 7 variables de
 
 ---
 
+## Flujo de análisis
+
+```mermaid
+flowchart LR
+    A["7 features\nOpen Banking"] --> B["Gradient Boosting\nAUC-ROC 0.918"]
+    B --> C{"Probabilidad\nde impago"}
+    C --> D["Score 0–1000"]
+    C --> E["Desglose SHAP\npor variable"]
+    D --> F["Nivel de riesgo\n🟢 Bajo · 🟡 Medio · 🔴 Alto"]
+    E --> G["Recomendaciones\npriorizadas"]
+    F --> H["Proyección mejora\n6 y 12 meses"]
+    G --> H
+```
+
+---
+
 ## Modelo
 
 - **Algoritmo:** Gradient Boosting Classifier (scikit-learn)
