@@ -1,3 +1,9 @@
+<div align="center">
+  <img src=".github/assets/portfolio.png" width="100%"/>
+</div>
+
+---
+
 # WealthOptimizer — Credit Risk Scoring Dashboard
 
 Dashboard interactivo de scoring de riesgo crediticio basado en datos bancarios abiertos (Open Banking). Predice la probabilidad de impago de un cliente y genera un score entre 0 y 1000, con explicabilidad mediante SHAP.
